@@ -1,0 +1,11 @@
+{
+  "cell_counts": [
+    8,
+    12,
+    20
+  ],
+  "peak_speed": 0.01,
+  "viscosity": 1.0,
+  "density": 1.0,
+  "penalty": 10000.0
+}
