@@ -1,21 +1,12 @@
-# Development workflow
+# Working on the code
 
-1. Define one case, its assumptions, and a reference answer.
-2. Implement a small runnable Python example.
-3. Verify conservation, boundary conditions, and convergence.
-4. Save plots and measurements under the tier's results folder.
-5. Implement the equivalent MATLAB example using the same case.
-6. Compare numerical results within a stated tolerance.
-7. Update the tier README with actual run instructions and completion status.
+1. Run one tier with its supplied case before editing.
+2. Change one physical or numerical input at a time.
+3. Run `python3 tests/verify.py` after modifying numerical operators.
+4. Inspect plots, conservation, and reference errors together.
+5. Keep MATLAB and Python cases consistent; MATLAB parity still needs execution in MATLAB.
+6. Update the tier README whenever model scope changes.
 
-## When the code grows
+Shared flow equations live in common/python/stokes.py and common/matlab/cfd_stokes.m. Drivers, adaptation comparisons, and visualization live alongside those files. Each tier's entry point locates these dependencies automatically.
 
-Within each language folder, introduce `meshing`, `physics_engine`, `solvers`, `postprocessing`, and `orchestration` modules as working code requires them. Avoid duplicating an entire platform structure before there is code to organize.
-
-## Naming
-
-Use lowercase snake_case for code files and functions; keep the tier folder names shown here. Use descriptive case names such as `laminar_channel`. Avoid ambiguous filenames such as `test_final2`.
-
-## Dependencies
-
-No numerical dependencies are required for this folder starter. Add Python requirements and MATLAB version/toolbox information when the first implementation exists.
+Python dependencies are pinned in requirements.txt; Python 3.11+ is required. Example output values and timings reflect the environment recorded in docs/environment.json. Results are generated under each tier and ignored by Git by default.

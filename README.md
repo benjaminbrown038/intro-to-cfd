@@ -1,43 +1,66 @@
 # intro-to-cfd
 
-Progressive computational fluid dynamics in Python and MATLAB—from fundamental transport equations to 3D adaptive mesh simulations.
+Progressive computational fluid dynamics in Python and MATLAB.
 
-## Current status
+## What runs now
 
-This starter contains folders and implementation guidance. Numerical solvers are not implemented yet. Folder creation does not indicate completion of a tier.
-
-## Learning progression
-
-| Tier | Topic | Status |
+| Tier | Implemented example | Scope |
 | --- | --- | --- |
-| [tier-1](advanced/tier-1/README.md) | 1D diffusion | Planned |
-| [tier-2](advanced/tier-2/README.md) | 1D advection–diffusion | Planned |
-| [tier-3](advanced/tier-3/README.md) | 2D incompressible cavity flow | Planned |
-| [tier-4](advanced/tier-4/README.md) | Channel flow and cylinder flow | Planned |
-| [tier-5](advanced/tier-5/README.md) | Adaptive mesh CFD, progressing to 3D | Planned |
+| 1 | Transient 1D diffusion and analytical convergence | Explicit finite differences |
+| 2 | Periodic advection–diffusion, upwind vs Lax–Wendroff advection | Conservative face fluxes; explicit diffusion |
+| 3 | 2D cavity with a smoothly moving lid | Coupled steady Stokes velocity and pressure |
+| 4 | Channel verification and a penalized circular obstacle | Steady creeping flow; approximate obstacle geometry |
+| 5 | Adaptive 2D and 3D cavity simulations | Nonuniform tensor meshes; matched-cell-count uniform comparisons |
+
+All five Python examples have been executed. Python numerical checks pass. MATLAB implementations are included for every tier, but have not been executed because MATLAB/Octave is unavailable in the build environment.
+
+**Scope matters:** Tiers 3–5 solve steady incompressible Stokes flow, neglecting fluid inertia. They are not full time-dependent Navier–Stokes solvers. Tier 5 inserts whole coordinate planes based on computed velocity gradients; it does not implement local octree/block AMR. The roadmap retains these extensions for later work.
+
+## Quick start: Python
+
+Use Python 3.11 or newer. Open a terminal in this extracted repository folder:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 run_all.py
+```
+
+Run one tier instead:
+
+```bash
+python3 advanced/tier-5/python/run_case.py
+```
+
+Run numerical verification:
+
+```bash
+python3 tests/verify.py
+```
+
+## Quick start: MATLAB
+
+Open the repository root in MATLAB and run:
+
+```matlab
+run_all
+```
+
+For a single tier, navigate into its `matlab` folder, run `clear run_case`, then `run_case`. Do not add all five tier folders to the MATLAB path: they intentionally share the entry-point name. Base MATLAB functions are used; no specialist toolbox is required. MATLAB results are unverified here.
 
 ## Organization
 
-- `advanced/tier-N/python/`: Python implementation for that tier.
-- `advanced/tier-N/matlab/`: equivalent MATLAB implementation.
-- `advanced/tier-N/cases/`: shared physical inputs, units, meshes, and boundary conditions.
-- `advanced/tier-N/results/`: locally generated plots and measurements.
-- `docs/`: workflow and verification guidance.
+- `advanced/tier-N/python/`: runnable entry point and tier-specific Python code.
+- `advanced/tier-N/matlab/`: matching MATLAB entry point/code.
+- `advanced/tier-N/cases/`: shared JSON physical and numerical inputs.
+- `advanced/tier-N/results/`: generated plots, fields, and measurements.
+- `common/python/` and `common/matlab/`: shared 2D/3D Stokes solver and drivers.
+- `tests/verify.py`: Python numerical checks, including a manufactured 3D flow.
+- `docs/`: equations, scope, verification results, and development roadmap.
 
-The `advanced` parent keeps the layout familiar alongside intro-to-fea; tiers 1–2 build the foundations.
+Python outputs from the supplied cases are included in this archive. Rerunning replaces the named outputs. Generated results are ignored by Git by default; select small reference outputs deliberately if you want to track them. No GitHub repository has been changed by creating this archive.
 
-## First complete flow example
+The `advanced` parent preserves the structure established alongside intro-to-fea; the first two tiers are foundations.
 
-The first complete flow milestone is Tier 4 laminar channel flow. Tiers 1–3 provide supporting exercises and numerical techniques. Implement the Python example first, verify it, and then match its inputs and outputs in MATLAB.
-
-## Using this starter
-
-Extract the ZIP. For a new repository, use the extracted `intro-to-cfd` folder as its root. If you already cloned an empty repository, copy this folder's contents into that clone. Review any existing files before replacing them.
-
-Each folder contains a README so Git can track it. Add real source files as functionality is implemented; no empty solver files are supplied.
-
-See [workflow](docs/workflow.md) for conventions and [verification](docs/verification.md) for completion checks.
-
-## Increasing complexity
-
-Each tier contains smaller steps so physics, geometry, and numerical difficulty can grow gradually. See the [complexity roadmap](docs/complexity-roadmap.md).
+Start with [Tier 1](advanced/tier-1/README.md), or inspect [Tier 5](advanced/tier-5/README.md). Read [the numerical methods](docs/numerical-methods.md) before changing physical parameters.
