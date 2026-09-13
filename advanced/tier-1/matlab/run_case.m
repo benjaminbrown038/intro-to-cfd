@@ -13,7 +13,7 @@ f1 = figure('Visible', 'off'); hold on;
 for k = 1:numel(counts)
     n = counts(k);
     assert(n >= 3 && n == floor(n));
-    x = linspace(0, c.length, n)';
+    x = linspace(0, c.length, n);
     dx = c.length/(n-1);
     steps = max(1, ceil(c.final_time/(c.diffusion_number*dx^2/c.diffusivity)));
     dt = c.final_time/steps;
