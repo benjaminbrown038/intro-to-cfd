@@ -1,0 +1,18 @@
+test_channel_second_order (test_physics.PhysicsTests.test_channel_second_order) ... ok
+test_compliance_against_integrated_polynomial (test_physics.PhysicsTests.test_compliance_against_integrated_polynomial) ... ok
+test_insert_reduces_flow (test_physics.PhysicsTests.test_insert_reduces_flow) ... ok
+test_invalid_physics_rejected (test_physics.PhysicsTests.test_invalid_physics_rejected) ... ok
+test_inverse_viscosity (test_physics.PhysicsTests.test_inverse_viscosity) ... ok
+test_layered_darcy_resistance (test_physics.PhysicsTests.test_layered_darcy_resistance) ... ok
+test_more_conductive_wall (test_physics.PhysicsTests.test_more_conductive_wall) ... ok
+test_porous_mass_conservation (test_physics.PhysicsTests.test_porous_mass_conservation) ... ok
+test_rigid_limit_and_pressure_monotonicity (test_physics.PhysicsTests.test_rigid_limit_and_pressure_monotonicity) ... ok
+test_square_duct_series_and_refinement (test_physics.PhysicsTests.test_square_duct_series_and_refinement) ... ok
+test_thermal_energy_balance_and_bounds (test_physics.PhysicsTests.test_thermal_energy_balance_and_bounds) ... ok
+test_thermal_equilibrium (test_physics.PhysicsTests.test_thermal_equilibrium) ... ok
+test_uniform_darcy_reference (test_physics.PhysicsTests.test_uniform_darcy_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.492s
+
+OK
