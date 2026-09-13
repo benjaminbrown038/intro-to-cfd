@@ -1,0 +1,30 @@
+{
+  "config": {
+    "name": "porous_mesh_40",
+    "model": "porous",
+    "nx": 40,
+    "ny": 40,
+    "length": 0.1,
+    "height": 0.05,
+    "mu": 0.001,
+    "permeability": 1e-10,
+    "contrast": 0.01,
+    "pattern": "inclusion",
+    "inlet_pressure": 100.0
+  },
+  "metrics": {
+    "inlet_flow_per_depth_m2_s": 3.4783145392957578e-06,
+    "outlet_flow_per_depth_m2_s": 3.4783145392978847e-06,
+    "mass_relative_imbalance": 6.114742374581725e-13,
+    "max_divergence_s_inv": 7.0525657254287555e-15,
+    "linear_residual": 2.6661530845838798e-15
+  },
+  "runtime_seconds": 0.03948605099867564,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

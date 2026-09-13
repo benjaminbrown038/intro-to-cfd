@@ -1,0 +1,13 @@
+{
+  "name": "tier_2_duct_insert",
+  "model": "duct",
+  "nx": 48,
+  "ny": 48,
+  "width": 0.01,
+  "height": 0.01,
+  "mu": 0.001,
+  "rho": 1000.0,
+  "pressure_gradient": 1.0,
+  "shape": "insert",
+  "insert_radius": 0.002
+}

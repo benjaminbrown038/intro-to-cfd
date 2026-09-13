@@ -1,0 +1,29 @@
+{
+  "config": {
+    "name": "tier_2_duct_insert",
+    "model": "duct",
+    "nx": 48,
+    "ny": 48,
+    "width": 0.01,
+    "height": 0.01,
+    "mu": 0.001,
+    "rho": 1000.0,
+    "pressure_gradient": 1.0,
+    "shape": "insert",
+    "insert_radius": 0.002
+  },
+  "metrics": {
+    "flow_m3_s": 8.926904995928158e-08,
+    "fluid_area_m2": 8.767361111111112e-05,
+    "max_velocity_m_s": 0.0017431067740155577,
+    "linear_residual": 1.5953131933814357e-14
+  },
+  "runtime_seconds": 0.04095551800128305,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "name": "thermal_mesh_2",
+    "model": "thermal",
+    "nx": 40,
+    "n_fluid": 20,
+    "n_wall": 4,
+    "length": 0.1,
+    "fluid_height": 0.005,
+    "wall_thickness": 0.001,
+    "k_fluid": 0.6,
+    "k_solid": 15.0,
+    "rho": 1000.0,
+    "cp": 4180.0,
+    "mu": 0.001,
+    "mean_velocity": 0.005,
+    "inlet_temperature": 293.15,
+    "outer_temperature": 333.15
+  },
+  "metrics": {
+    "outlet_bulk_temperature_K": 317.2409954086057,
+    "heat_to_fluid_W_per_m": 2517.5090201993,
+    "outer_wall_heat_W_per_m": 2530.6441531515816,
+    "inlet_conduction_W_per_m": -13.135132951741197,
+    "energy_relative_imbalance": 2.1255562664489911e-13,
+    "reynolds_hydraulic": 50.0,
+    "linear_residual": 3.33081677842554e-16
+  },
+  "runtime_seconds": 0.029070358999888413,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

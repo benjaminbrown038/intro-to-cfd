@@ -1,0 +1,29 @@
+{
+  "config": {
+    "name": "duct_mesh_64",
+    "model": "duct",
+    "nx": 64,
+    "ny": 64,
+    "width": 0.01,
+    "height": 0.01,
+    "mu": 0.001,
+    "rho": 1000.0,
+    "pressure_gradient": 1.0,
+    "shape": "insert",
+    "insert_radius": 0.002
+  },
+  "metrics": {
+    "flow_m3_s": 8.708601028172189e-08,
+    "fluid_area_m2": 8.720703125e-05,
+    "max_velocity_m_s": 0.0017176471140564055,
+    "linear_residual": 2.8002629457212475e-14
+  },
+  "runtime_seconds": 0.08227378899937321,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

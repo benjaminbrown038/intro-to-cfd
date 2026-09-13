@@ -1,0 +1,27 @@
+{
+  "config": {
+    "name": "channel_mesh_80",
+    "model": "channel",
+    "n": 80,
+    "height": 0.01,
+    "mu": 0.001,
+    "rho": 1000.0,
+    "pressure_gradient": 1.0
+  },
+  "metrics": {
+    "flow_per_depth_m2_s": 8.335937500000002e-05,
+    "exact_flow_per_depth_m2_s": 8.333333333333334e-05,
+    "flow_relative_error": 0.00031250000000015987,
+    "velocity_relative_l2": 0.00021395412174033562,
+    "reynolds_hydraulic": 166.71875000000003,
+    "linear_residual": 7.724682929097166e-14
+  },
+  "runtime_seconds": 0.001237431999470573,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

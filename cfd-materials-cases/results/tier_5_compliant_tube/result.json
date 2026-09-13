@@ -1,0 +1,31 @@
+{
+  "config": {
+    "name": "tier_5_compliant_tube",
+    "model": "compliant",
+    "n": 300,
+    "length": 0.5,
+    "radius": 0.002,
+    "thickness": 0.0002,
+    "young_modulus": 2000000.0,
+    "mu": 0.01,
+    "rho": 1000.0,
+    "inlet_pressure": 5000.0,
+    "outlet_pressure": 0.0,
+    "external_pressure": 0.0
+  },
+  "metrics": {
+    "flow_m3_s": 6.6052972648496904e-06,
+    "rigid_flow_m3_s": 6.2831853071795875e-06,
+    "flow_gain_percent": 5.126571029220428,
+    "max_hoop_strain": 0.025,
+    "max_reynolds": 210.2531420584409
+  },
+  "runtime_seconds": 0.00044776899994758423,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

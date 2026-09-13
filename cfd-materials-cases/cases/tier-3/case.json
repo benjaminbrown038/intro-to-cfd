@@ -1,0 +1,13 @@
+{
+  "name": "tier_3_porous_inclusion",
+  "model": "porous",
+  "nx": 60,
+  "ny": 40,
+  "length": 0.1,
+  "height": 0.05,
+  "mu": 0.001,
+  "permeability": 1e-10,
+  "contrast": 0.01,
+  "pattern": "inclusion",
+  "inlet_pressure": 100.0
+}

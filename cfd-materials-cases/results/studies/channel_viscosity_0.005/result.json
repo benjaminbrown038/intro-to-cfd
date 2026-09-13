@@ -1,0 +1,27 @@
+{
+  "config": {
+    "name": "channel_viscosity_0.005",
+    "model": "channel",
+    "n": 40,
+    "height": 0.01,
+    "mu": 0.005,
+    "rho": 1000.0,
+    "pressure_gradient": 1.0
+  },
+  "metrics": {
+    "flow_per_depth_m2_s": 1.6687499999999982e-05,
+    "exact_flow_per_depth_m2_s": 1.666666666666667e-05,
+    "flow_relative_error": 0.001249999999998641,
+    "velocity_relative_l2": 0.0008558163498432234,
+    "reynolds_hydraulic": 6.674999999999994,
+    "linear_residual": 2.734047475201e-14
+  },
+  "runtime_seconds": 0.0008762609995756065,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

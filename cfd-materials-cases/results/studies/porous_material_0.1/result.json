@@ -1,0 +1,30 @@
+{
+  "config": {
+    "name": "porous_material_0.1",
+    "model": "porous",
+    "nx": 60,
+    "ny": 40,
+    "length": 0.1,
+    "height": 0.05,
+    "mu": 0.001,
+    "permeability": 1e-10,
+    "contrast": 0.1,
+    "pattern": "inclusion",
+    "inlet_pressure": 100.0
+  },
+  "metrics": {
+    "inlet_flow_per_depth_m2_s": 3.78823843016763e-06,
+    "outlet_flow_per_depth_m2_s": 3.788238430165209e-06,
+    "mass_relative_imbalance": 6.390358494794291e-13,
+    "max_divergence_s_inv": 9.613308955304378e-15,
+    "linear_residual": 1.743912861225107e-15
+  },
+  "runtime_seconds": 0.04951729499953217,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  }
+}

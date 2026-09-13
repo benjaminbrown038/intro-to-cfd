@@ -1,0 +1,18 @@
+{
+  "name": "tier_4_heated_wall",
+  "model": "thermal",
+  "nx": 80,
+  "n_fluid": 20,
+  "n_wall": 4,
+  "length": 0.1,
+  "fluid_height": 0.005,
+  "wall_thickness": 0.001,
+  "k_fluid": 0.6,
+  "k_solid": 15.0,
+  "rho": 1000.0,
+  "cp": 4180.0,
+  "mu": 0.001,
+  "mean_velocity": 0.005,
+  "inlet_temperature": 293.15,
+  "outer_temperature": 333.15
+}

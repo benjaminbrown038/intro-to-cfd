@@ -1,0 +1,9 @@
+{
+  "name": "tier_1_channel",
+  "model": "channel",
+  "n": 40,
+  "height": 0.01,
+  "mu": 0.001,
+  "rho": 1000.0,
+  "pressure_gradient": 1.0
+}
