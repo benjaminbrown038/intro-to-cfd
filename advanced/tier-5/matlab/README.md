@@ -1,5 +1,3 @@
-# Adaptive mesh CFD, progressing to 3D — matlab
+# Tier 5 — matlab
 
-Implementation pending. Start with a runnable `run_case.m` when implementing this tier. Keep inputs consistent with the other language.
-
-Separate grid generation, physical equations, numerical solves, and plotting into modules only as the code grows. Record the actual environment requirements and run command once implemented.
+`run_case` is implemented. See [the tier instructions](../README.md). Python was executed; MATLAB has not been executed in the build environment.

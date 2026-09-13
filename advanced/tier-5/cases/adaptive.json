@@ -1,0 +1,9 @@
+{
+  "initial_cells": 5,
+  "cycles": 3,
+  "add_per_axis": 2,
+  "reference_cells": 13,
+  "lid_speed": 0.01,
+  "viscosity": 1.0,
+  "density": 1.0
+}
