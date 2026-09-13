@@ -1,0 +1,11 @@
+{
+  "length": 1.0,
+  "speed": 1.0,
+  "diffusivity": 0.01,
+  "final_time": 0.2,
+  "cell_counts": [
+    40,
+    80,
+    160
+  ]
+}

@@ -1,15 +1,29 @@
-# tier-2: 1D advection–diffusion
+# Tier 2: 1D advection–diffusion
 
-Status: planned; no solver implemented.
+## Implemented
 
-## Objective
+Transport a periodic sine profile with constant speed and diffusivity. Compare upwind advection and Lax–Wendroff advection; both use explicit centered diffusion. The exact solution is a translated, exponentially decaying sine wave.
 
-Add transport, compare discretizations, and investigate time-step stability and numerical diffusion.
+The conservative flux difference preserves total scalar mass. Positive and negative speeds, pure advection, and pure diffusion are supported. The selected time step satisfies a sufficient explicit stability bound. Lax–Wendroff is not positivity preserving in general; this smooth test is not a discontinuous-front benchmark. Diffusion is first-order in time; do not describe the combined scheme as uniformly second-order.
 
-## Deliverables
+## Run
 
-- Working Python implementation and equivalent MATLAB implementation.
-- Documented case inputs and units.
-- Plots, numerical checks, and reproducible run instructions.
+From the repository root, after installing requirements:
 
-Use `python/` and `matlab/` for source, `cases/` for common inputs, and `results/` for generated outputs.
+```bash
+python3 advanced/tier-2/python/run_case.py
+```
+
+Optional flags: `--case PATH` and `--output PATH`. Default shared input: `cases/transport.json`.
+
+For MATLAB, enter this tier's `matlab` directory and run `clear run_case` followed by `run_case`. The Python run was executed; the MATLAB implementation has not been executed here.
+
+## Saved results
+
+convergence.csv, per-scheme profile CSVs, solution.png, and run metadata.
+
+Python saves under `results/python/`; MATLAB saves under `results/matlab/`. Fields are saved as NPZ in Python and MAT in MATLAB. Scalar comparisons use CSV. Metadata includes actual inputs; flow metrics distinguish assembly from sparse linear solve time.
+
+## Experiments
+
+Change one input at a time. Keep model assumptions valid and repeat numerical checks. Examine accuracy, conservation, and solve cost together. Higher mesh density alone does not establish correctness.
