@@ -1,0 +1,9 @@
+{
+  "description": "Normalized scalar diffusion, zero endpoint values, sine initial condition",
+  "length": 1.0,
+  "diffusivity": 0.1,
+  "final_time": 0.2,
+  "diffusion_number": 0.4,
+  "node_counts": [21, 41, 81, 161],
+  "units": {"length": "m", "diffusivity": "m^2/s", "final_time": "s"}
+}

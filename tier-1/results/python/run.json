@@ -1,0 +1,67 @@
+{
+  "case": {
+    "description": "Normalized scalar diffusion, zero endpoint values, sine initial condition",
+    "length": 1.0,
+    "diffusivity": 0.1,
+    "final_time": 0.2,
+    "diffusion_number": 0.4,
+    "node_counts": [
+      21,
+      41,
+      81,
+      161
+    ],
+    "units": {
+      "length": "m",
+      "diffusivity": "m^2/s",
+      "final_time": "s"
+    }
+  },
+  "metrics": [
+    {
+      "nodes": 21,
+      "dx": 0.05,
+      "dt": 0.01,
+      "steps": 20,
+      "diffusion_number": 0.3999999999999999,
+      "l2_error": 0.00033132158462888386,
+      "max_error": 0.0004685594784891167,
+      "integration_seconds": 6.33530007689842e-05,
+      "observed_order": null
+    },
+    {
+      "nodes": 41,
+      "dx": 0.025,
+      "dt": 0.0025,
+      "steps": 80,
+      "diffusion_number": 0.3999999999999999,
+      "l2_error": 8.254819094321848e-05,
+      "max_error": 0.00011674077118117854,
+      "integration_seconds": 0.0002407949996268144,
+      "observed_order": 2.004923690122992
+    },
+    {
+      "nodes": 81,
+      "dx": 0.0125,
+      "dt": 0.000625,
+      "steps": 320,
+      "diffusion_number": 0.3999999999999999,
+      "l2_error": 2.0619497600777627e-05,
+      "max_error": 2.9160373156367214e-05,
+      "integration_seconds": 0.001166087000456173,
+      "observed_order": 2.0012274170845408
+    },
+    {
+      "nodes": 161,
+      "dx": 0.00625,
+      "dt": 0.00015625,
+      "steps": 1280,
+      "diffusion_number": 0.3999999999999999,
+      "l2_error": 5.153778879220545e-06,
+      "max_error": 7.288543988459573e-06,
+      "integration_seconds": 0.0039973069997358834,
+      "observed_order": 2.000306636112262
+    }
+  ],
+  "numpy_version": "2.3.5"
+}
