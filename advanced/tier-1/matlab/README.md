@@ -1,5 +1,3 @@
-# 1D diffusion — matlab
+# MATLAB diffusion solver
 
-Implementation pending. Start with a runnable `run_case.m` when implementing this tier. Keep inputs consistent with the other language.
-
-Separate grid generation, physical equations, numerical solves, and plotting into modules only as the code grows. Record the actual environment requirements and run command once implemented.
+`run_case.m` contains the matching implementation. It has not been executed in the build environment. See [Tier 1 instructions](../README.md).
