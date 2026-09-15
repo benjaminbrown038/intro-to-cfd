@@ -1,0 +1,6 @@
+study,n,cfl,metric,value,reference,relative_error,status
+natural_mesh,16,0.4,nusselt_hot,1.148519033825367,1.118,0.027297883564728842,steady_tolerance_reached
+natural_mesh,32,0.4,nusselt_hot,1.1309024343381844,1.118,0.01154063894291979,steady_tolerance_reached
+natural_mesh,48,0.4,nusselt_hot,1.1260358900465073,1.118,0.007187737072009925,steady_tolerance_reached
+lid_timestep,24,0.4,kinetic_energy,0.02821636169753686,,,end_time_reached
+lid_timestep,24,0.2,kinetic_energy,0.0282149522632497,,,end_time_reached
