@@ -1,0 +1,15 @@
+{
+  "name": "tier_9_natural_convection",
+  "mode": "natural",
+  "n": 32,
+  "reynolds": 100.0,
+  "prandtl": 0.71,
+  "rayleigh": 10000.0,
+  "richardson": 0.0,
+  "end_time": 80.0,
+  "cfl": 0.4,
+  "dt_max": 0.01,
+  "steady_tolerance": 1e-06,
+  "max_steps": 200000,
+  "samples": 50
+}
