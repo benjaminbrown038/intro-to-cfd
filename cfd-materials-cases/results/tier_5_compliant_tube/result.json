@@ -20,12 +20,12 @@
     "max_hoop_strain": 0.025,
     "max_reynolds": 210.2531420584409
   },
-  "runtime_seconds": 0.00044776899994758423,
+  "runtime_seconds": 0.00011004199999997688,
   "environment": {
-    "python": "3.12.14",
-    "numpy": "2.3.5",
-    "scipy": "1.17.0",
-    "matplotlib": "3.10.8",
-    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
   }
 }

@@ -12,16 +12,16 @@
     "flow_per_depth_m2_s": 8.34374999999999e-05,
     "exact_flow_per_depth_m2_s": 8.333333333333334e-05,
     "flow_relative_error": 0.001249999999998641,
-    "velocity_relative_l2": 0.0008558163498428809,
+    "velocity_relative_l2": 0.0008558163498428004,
     "reynolds_hydraulic": 166.87499999999974,
-    "linear_residual": 1.7851644755745214e-14
+    "linear_residual": 1.4076936303195306e-14
   },
-  "runtime_seconds": 0.0016250429998763138,
+  "runtime_seconds": 0.0008557080000000106,
   "environment": {
-    "python": "3.12.14",
-    "numpy": "2.3.5",
-    "scipy": "1.17.0",
-    "matplotlib": "3.10.8",
-    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
   }
 }

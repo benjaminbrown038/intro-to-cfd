@@ -1,8 +1,8 @@
 {
   "cells": 25,
   "unknowns": 64,
-  "assembly_seconds": 0.0012078749999999694,
-  "solve_seconds": 0.00011549999999999061,
+  "assembly_seconds": 0.002671707999999995,
+  "solve_seconds": 0.00016537500000002314,
   "relative_residual": 5.435789250684994e-16,
   "max_divergence": 7.951785682550318e-17,
   "penalty_force": [
