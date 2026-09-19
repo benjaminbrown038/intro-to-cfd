@@ -1,0 +1,35 @@
+{
+  "config": {
+    "name": "grid_16",
+    "mode": "thermal_lid",
+    "n": 16,
+    "reynolds": 100.0,
+    "prandtl": 0.71,
+    "rayleigh": 10000.0,
+    "richardson": 1.0,
+    "end_time": 80.0,
+    "cfl": 0.4,
+    "dt_max": 0.0011248415716096326,
+    "steady_tolerance": 1e-06,
+    "max_steps": 200000,
+    "samples": 50
+  },
+  "status": "steady_tolerance_reached",
+  "metrics": {
+    "time": 44.52122940430939,
+    "steps": 39580,
+    "change_rate": 9.92639155285947e-07,
+    "max_divergence": 8.881784197001252e-16,
+    "kinetic_energy": 0.03828684121674977,
+    "nusselt_hot": 2.9452562802461153,
+    "nusselt_cold": 2.9453018417368595,
+    "max_energy_step_defect": 6.499919078992687e-18
+  },
+  "runtime_seconds": 11.638134156999968,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

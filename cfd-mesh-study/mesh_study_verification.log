@@ -1,0 +1,18 @@
+test_grids_and_zero_reference (test_mesh_study.MeshStudyTests.test_grids_and_zero_reference) ... ok
+test_known_velocity_change (test_mesh_study.MeshStudyTests.test_known_velocity_change) ... ok
+test_linear_fields_interpolate_exactly (test_mesh_study.MeshStudyTests.test_linear_fields_interpolate_exactly) ... ok
+test_nonsteady_flag (test_mesh_study.MeshStudyTests.test_nonsteady_flag) ... ok
+test_conduction_second_order_eigenmode (test_solver.SolverTests.test_conduction_second_order_eigenmode) ... ok
+test_hot_side_rises (test_solver.SolverTests.test_hot_side_rises) ... ok
+test_incomplete_status (test_solver.SolverTests.test_incomplete_status) ... ok
+test_invalid_inputs (test_solver.SolverTests.test_invalid_inputs) ... ok
+test_linear_conduction_and_unit_nusselt (test_solver.SolverTests.test_linear_conduction_and_unit_nusselt) ... ok
+test_motionless_equilibrium (test_solver.SolverTests.test_motionless_equilibrium) ... ok
+test_projection_mass_and_boundary (test_solver.SolverTests.test_projection_mass_and_boundary) ... ok
+test_projection_removes_gradient (test_solver.SolverTests.test_projection_removes_gradient) ... ok
+test_thermal_flux_balance (test_solver.SolverTests.test_thermal_flux_balance) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.492s
+
+OK

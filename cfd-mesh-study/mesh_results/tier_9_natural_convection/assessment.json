@@ -1,0 +1,12 @@
+{
+  "all_runs_steady": true,
+  "finest_pair_within_threshold": false,
+  "threshold_percent": 1.0,
+  "checked_metrics": [
+    "kinetic_energy_change_percent",
+    "velocity_sampled_l2_change_percent",
+    "nusselt_change_percent",
+    "temperature_rms_change_percent_of_deltaT"
+  ],
+  "assessment": "Refine further: one or more finest-pair changes exceed the threshold or are undefined."
+}

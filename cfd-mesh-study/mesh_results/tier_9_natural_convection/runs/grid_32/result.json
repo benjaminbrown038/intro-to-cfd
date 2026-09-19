@@ -1,0 +1,35 @@
+{
+  "config": {
+    "name": "grid_32",
+    "mode": "natural",
+    "n": 32,
+    "reynolds": 100.0,
+    "prandtl": 0.71,
+    "rayleigh": 10000.0,
+    "richardson": 0.0,
+    "end_time": 80.0,
+    "cfl": 0.4,
+    "dt_max": 0.001270859590514633,
+    "steady_tolerance": 1e-06,
+    "max_steps": 200000,
+    "samples": 50
+  },
+  "status": "steady_tolerance_reached",
+  "metrics": {
+    "time": 24.644509179264965,
+    "steps": 19392,
+    "change_rate": 9.686589811009226e-07,
+    "max_divergence": 2.581268532253489e-15,
+    "kinetic_energy": 0.008912993778266091,
+    "nusselt_hot": 2.265555422985181,
+    "nusselt_cold": 2.26555542298518,
+    "max_energy_step_defect": 3.3362657210035403e-18
+  },
+  "runtime_seconds": 9.544783092999978,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}
