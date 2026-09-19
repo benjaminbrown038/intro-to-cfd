@@ -6,6 +6,40 @@ Solve a smooth-lid cavity, compute velocity-gradient activity, mark coordinate i
 
 Refinement is anisotropic tensor-grid refinement: a selected interval is split across the entire domain. There are no hanging faces or octrees. Each mesh is solved from scratch as a steady problem, so there is no transient state transfer. Conservation is enforced using shared face fluxes on each mesh. The gradient indicator is heuristic, not a certified error bound.
 
+## Model and mesh equations
+
+Each 2D or 3D mesh solves steady incompressible Stokes flow:
+
+$$
+-\mu\nabla^2\mathbf{u}+\nabla p=\mathbf{0}, \qquad \nabla\cdot\mathbf{u}=0.
+$$
+
+For a control volume $P$, discrete continuity balances outward face fluxes:
+
+$$
+\sum_{f\in\partial P}(\mathbf{u}_f\cdot\mathbf{n}_f)A_f=0.
+$$
+
+Here $A_f$ is face area in 3D (edge length per unit depth in 2D), and $\mathbf{n}_f$ is the outward unit normal. The velocity-gradient indicator ranks coordinate intervals. Each marked interval gains a midpoint:
+
+$$
+x_{i+1/2}^{\mathrm{new}}=\frac{x_i+x_{i+1}}{2}.
+$$
+
+The same operation applies along the other coordinate directions; each inserted coordinate creates an entire mesh plane. Tensor-grid cell counts are:
+
+$$
+N_{\mathrm{cells}}=N_xN_y\quad\text{in 2D}, \qquad N_{\mathrm{cells}}=N_xN_yN_z\quad\text{in 3D}.
+$$
+
+The reported sampled velocity difference is:
+
+$$
+E_h=\frac{\left[\sum_j\left\|\mathbf{u}_h(\mathbf{x}_j)-\mathbf{u}_{\mathrm{ref}}(\mathbf{x}_j)\right\|_2^2\right]^{1/2}}{\left[\sum_j\left\|\mathbf{u}_{\mathrm{ref}}(\mathbf{x}_j)\right\|_2^2\right]^{1/2}}.
+$$
+
+Both fields are linearly interpolated onto the same fixed interior sampling lattice. The reference is numerical, so this metric includes reference and interpolation error.
+
 ## Run
 
 From the repository root, after installing requirements:

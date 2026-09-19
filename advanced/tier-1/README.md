@@ -6,16 +6,43 @@ Transient sine-decay diffusion is implemented in Python and MATLAB. Python was e
 
 ## Model
 
-Equation: du/dt = alpha * d²u/dx², on 0 <= x <= L.
-Boundary values: u(0,t) = u(L,t) = 0.
-Initial condition: u(x,0) = sin(pi*x/L).
-Analytical solution: u(x,t) = sin(pi*x/L)*exp(-alpha*(pi/L)^2*t).
+Transient diffusion on a one-dimensional interval:
+
+$$
+\frac{\partial\phi}{\partial t}=\alpha\frac{\partial^2\phi}{\partial x^2}, \qquad 0\leq x\leq L.
+$$
+
+Initial and boundary conditions:
+
+$$
+\phi(x,0)=\sin\left(\frac{\pi x}{L}\right), \qquad \phi(0,t)=\phi(L,t)=0.
+$$
+
+Analytical solution:
+
+$$
+\phi(x,t)=\sin\left(\frac{\pi x}{L}\right)\exp\left[-\alpha\left(\frac{\pi}{L}\right)^2t\right].
+$$
+
+Here $\phi$ is the normalized transported scalar, $\alpha$ is diffusivity, and $L$ is the interval length.
 
 The transported scalar is normalized and dimensionless. Length is in meters, time in seconds, and diffusivity in m²/s. This is a diffusion building block, not a full fluid velocity/pressure solver.
 
 ## Numerical method
 
 Centered second-order spatial differences and forward Euler time integration. The explicit diffusion number alpha*dt/dx² must be at most 0.5. The code reduces dt as needed to reach the final time exactly.
+
+The explicit update and stability restriction are:
+
+$$
+\phi_i^{n+1}=\phi_i^n+\frac{\alpha\Delta t}{\Delta x^2}\left(\phi_{i+1}^n-2\phi_i^n+\phi_{i-1}^n\right).
+$$
+
+
+
+$$
+D=\frac{\alpha\Delta t}{\Delta x^2}\leq\frac{1}{2}.
+$$
 
 The supplied refinement study uses dt proportional to dx², so both the spatial error and first-order temporal error scale with dx². Observed second-order convergence here is a combined refinement result; it does not imply second-order time integration.
 

@@ -64,3 +64,5 @@ Python outputs from the supplied cases are included in this archive. Rerunning r
 The `advanced` parent preserves the structure established alongside intro-to-fea; the first two tiers are foundations.
 
 Start with [Tier 1](advanced/tier-1/README.md), or inspect [Tier 5](advanced/tier-5/README.md). Read [the numerical methods](docs/numerical-methods.md) before changing physical parameters.
+
+See the [advanced overview](advanced/README.md#equations-by-tier) for formatted governing equations and links to every tier.
